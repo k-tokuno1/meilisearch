@@ -20,7 +20,7 @@ RUN     set -eux; \
         cargo build --release -p meilisearch -p meilitool
 
 # Run
-FROM    alpine:3.20
+FROM    alpine:3.21.0
 LABEL   org.opencontainers.image.source="https://github.com/meilisearch/meilisearch"
 
 ENV     MEILI_HTTP_ADDR 0.0.0.0:7700
